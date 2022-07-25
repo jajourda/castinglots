@@ -1,0 +1,145 @@
+@import 'tentcss/tent.scss';
+
+#testing {
+  border: solid red 5px;
+  @include breakpoint-min(xl) {
+    //border:solid yellow 20px;
+  }
+}
+
+.container {
+  max-width: none;
+}
+
+.mirror {
+  width: 100vw;
+  //width: 60vw;
+  max-width: none;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  //left:50%;
+  margin-left: 0;
+  //margin-left:-30vw;
+  top: 20%;
+  //border:yellow 1px dotted;
+  @include breakpoint-min(sm) {
+    top: 20%;
+  }
+  @include breakpoint-min(md) {
+    top: 0%;
+    //border:yellow 1px dotted;
+  }
+  @include breakpoint-min(lg) {
+    top: 0%;
+    // border:red 1px dotted;
+    max-width: 70vw;
+    margin-left: 15vw;
+  }
+  @include breakpoint-min(xl) {
+    top: 0%;
+    // border: blue 1px dotted;
+    max-width: 60vw;
+    margin-left: 20vw;
+  }
+  @include breakpoint-min(xxl) {
+    top: 0%;
+    //border: mediumpurple 1px dotted;
+    max-width: 60vw;
+    margin-left: 20vw;
+  }
+  @include breakpoint-min(xxxl) {
+    top: 0%;
+    // border: blue 1px dotted;
+    max-width: 60vw;
+    margin-left: 20vw;
+  }
+}
+
+.mirror__side {
+  //border:dashed green 2px!important;
+}
+.verse.content{
+  //padding:0 1em;
+  .content__item{
+    width:100%;
+  }
+  section.section.section--flow{
+    //border:dotted green 2px;
+    width:100%;
+  }
+}
+.verse .fragment-content {
+  position: relative;
+ // border: yellow dotted 1px;
+  width:100%;
+
+  .deco-bg {
+    line-height: 1.6;
+  }
+  .deco-bg--color-5 {
+    background: -webkit-linear-gradient(bottom, #ffb857 90%, transparent 90%, transparent);
+    background: linear-gradient(to top, #ffb857 90%, transparent 90%, transparent);
+  }
+  .verse-wrap{
+   // border: red dotted 1px;
+    position: absolute;
+    top:5vh;
+    right:2em;
+    width:100%!important;
+    height:auto;
+    float: right;
+    @include breakpoint-min(md) {
+      top:20vh;
+    }
+  }
+  .title {
+    //border: blue solid 1px;
+    position: relative;
+    float:right;
+    width:50%;
+    padding: 0;
+    text-align: right;
+    font-size:2.5em;
+    font-family: 'mu-th-urregular';
+    cite{
+      font-family: 'mu-th-urregular';
+      font-style: normal;
+      font-weight: 900;
+    }
+  }
+  .text {
+   // border: green solid 1px;
+    position: relative;
+    text-align: right;
+    width:60%;
+    padding: 0;
+    float:right;
+    span {
+     color: #0f0f0f;
+      font-family: 'mu-th-urregular';
+      line-height:2em;
+      font-size:.75em;
+      @include breakpoint-min(md) {
+        font-size:1em;
+      }
+    }
+
+  }
+  .numbers{
+    position: relative;
+    width:60%;
+    float:right;
+    padding: 0;
+    text-align: right;
+   // border: blue solid 1px;
+    color: #707070;
+    font-family: 'mu-th-urregular';
+    color:white;
+    font-weight: 900;
+
+  }
+}

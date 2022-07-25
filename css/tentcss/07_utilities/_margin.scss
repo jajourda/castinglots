@@ -1,0 +1,28 @@
+// ==========================================================================
+// Margin
+// ==========================================================================
+
+.margin {
+
+    &-xxxs { margin: rem($space-xxxs); }
+    &-xxs { margin: rem($space-xxs); }
+    &-xs { margin: rem($space-xs); }
+    &-sm { margin: rem($space-sm); }
+    &-md { margin: rem($space-md); }
+    &-lg { margin: rem($space-lg); }
+    &-xl { margin: rem($space-xl); }
+    &-xxl { margin: rem($space-xxl); }
+    &-xxxl { margin: rem($space-xxxl); }
+    
+    &-y {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    &-x {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &-nulled { margin: 0; }
+}

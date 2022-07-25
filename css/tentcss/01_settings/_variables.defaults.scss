@@ -1,0 +1,275 @@
+// ==========================================================================
+// Tool Dependencies for Variables
+// ==========================================================================
+
+@import "../02_tools/scaling";
+
+// ==========================================================================
+// Colors 
+// ==========================================================================
+
+$color-primary:    #0074D9 !default;
+$color-secondary:  #3D9970 !default;
+$color-tertiary:   #FF4136 !default;
+
+$color-lightest:   	  #FFFFFF !default;
+$color-lighter:    		#F2F2F2 !default;
+$color-light:      		#E0E0E0 !default;
+$color-medium:     		#A4A4A4 !default;
+$color-dark:       		#6E6E6E !default;
+$color-darker:     		#444444 !default;
+$color-darkest:    		#111111 !default;
+
+// Base Colors
+$base-color: $color-darker !default;
+$base-color-inverse: $color-lighter !default;
+$base-color-bg: $color-lightest !default;
+
+// Link Colors
+$link-color: $color-primary !default;
+$link-hover-color: darken($link-color, 15%) !default;
+
+// ==========================================================================
+// Base
+// ==========================================================================
+
+$base-font-weight: 400 !default;
+$base-line-height: 1.6 !default;
+
+$border-radius: 6px !default;
+
+// ==========================================================================
+// Space Sizes
+// ==========================================================================
+
+$space-base: 8px;
+
+$space-xxxs: ($space-base) !default;
+$space-xxs: ($space-base * 2) !default;
+$space-xs: ($space-base * 3) !default;
+$space-sm: ($space-base * 4) !default;
+$space-md: ($space-base * 5) !default;
+$space-lg: ($space-base * 6) !default;
+$space-xl: ($space-base * 7) !default;
+$space-xxl: ($space-base * 8) !default;
+$space-xxxl: ($space-base * 9) !default;
+
+
+// ==========================================================================
+// Scaling
+// ==========================================================================
+
+$scale-ratio: 1.250 !default; // Major Third Ratio
+$scale-unit: 16 !default;
+
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+$font-family-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu,"Open Sans","Helvetica Neue",sans-serif !default;
+$font-family-secondary: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-monospace: "Lucida Console",Courier,monospace !default;
+
+$pararaph-margin: 0 0 rem($space-xs) !default;
+$heading-margin: 0 0 rem($space-sm) !default;
+
+// Font Sizes
+$size-xxxs: 10px !default;
+$size-xxs: 12px !default;
+$size-xs: 14px !default;
+$size-sm: 16px !default;
+$size-md: 18px !default;
+$size-lg: 20px !default;
+$size-xl: 32px !default;
+$size-xxl: 40px !default;
+$size-xxxl: 48px !default;
+
+$size-base: $size-sm !default;
+
+// ==========================================================================
+// Blockquote
+// ==========================================================================
+
+$blockquote-border: 4px solid $color-dark !default;
+$blockquote-padding: 0 0 0 rem($space-xxxs) !default;
+$blockquote-margin: 0 0 rem($space-xxs) !default;
+
+$cite-style: italic !default;
+
+// ==========================================================================
+// Code
+// ==========================================================================
+
+$code-color: $color-primary !default;
+$code-padding: rem(2px) rem(4px) !default;
+$code-bg: $color-lighter !default;
+
+
+// ==========================================================================
+// Zones
+// ==========================================================================
+
+$zone-header:  "masthead" !default;
+$zone-content: "mastcontent" !default;
+$zone-footer:  "mastfoot" !default;
+
+
+// ==========================================================================
+// Containers
+// ==========================================================================
+
+$container-max-widths: (
+  sm: rem(540px),
+  md: rem(720px),
+  lg: rem(960px),
+  xl: rem(1140px)
+) !default;
+
+// ==========================================================================
+// Grid & Breakpoints
+// ==========================================================================
+
+$breakpoints: (
+    xs: 0, 
+    sm: em(576px), 
+    md: em(768px), 
+    lg: em(992px), 
+    xl: em(1200px),
+    xxl: em(1400px),
+    xxxl: em(1600px)
+) !default;
+
+$grid-columns: 12 !default;
+
+// Gutter is applied to padding-left and padding-right. The value is not split.
+$grid-gutter: rem($space-xxs) !default;
+
+// ==========================================================================
+// Dividers
+// ==========================================================================
+
+$divider-margin: rem($space-xs) 0 !default;
+$divider-height: 1px !default;
+$divider-color: #dbdbdb !default;
+
+// ==========================================================================
+// Lists
+// ==========================================================================
+
+$list-padding: 0 !default;
+$list-margin: 0 0 rem($space-xs) !default;
+
+$unordered-list-style: circle inside !default;
+$ordered-list-style: decimal inside !default;
+
+$list-inline-space: $space-xs !default;
+
+
+// ==========================================================================
+// Tables
+// ==========================================================================
+
+$table-cell-padding: rem($space-xxxs) !default;
+$table-stripped-odd-bg: $color-lighter !default;
+$table-stripped-even-bg: $color-lightest !default;
+
+
+// ==========================================================================
+// Headings
+// ==========================================================================
+
+$heading-color: $base-color !default;
+$heading-color-inverse: $color-lighter !default;
+$heading-line-height: 1.25 !default;
+
+$lead-font-size: $size-md !default;
+$lead-font-weight: 300 !default;
+$lead-line-height: 1.6 !default;
+
+
+// ==========================================================================
+// Forms
+// ==========================================================================
+
+$form-label-weight: 600 !default;
+$form-margin: 0 0 rem($space-xxxs);
+
+$form-input-margin: 0 0 rem($space-xs) !default;
+$form-input-padding: rem($space-xxxs) rem($space-xxs) !default;
+$form-input-border: 1px solid $color-light !default;
+$form-input-radius: 0 !default;
+$form-input-size: rem($size-base) !default;
+$form-input-color: $color-medium !default;
+$form-input-bg: $color-lightest !default;
+$form-input-focus: $color-primary !default;
+
+// Textarea Height Sizes
+$control-textarea-sm: 80px !default;
+$control-textarea-md: 140px !default;
+$control-textarea-lg: 200px !default;
+
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+$button-filled-color: $base-color-bg !default;
+$button-filled-bg: $color-dark !default;
+$button-outlined-color: $color-dark !default;
+$button-clear-color: $color-dark !default;
+
+$button-primary-color: $color-lightest !default;
+$button-primary-bg: $color-primary !default;
+$button-secondary-color: $color-lightest !default;
+$button-secondary-bg: $color-secondary !default;
+$button-tertiary-color: $color-lightest !default;
+$button-tertiary-bg: $color-tertiary !default;
+
+$button-border-radius: 0 !default;
+$button-outlined-border-width: 2px !default;
+
+$button-padding-xxxs: rem($space-xxxs) rem($space-xxs) !default;
+$button-padding-xxs: rem($space-xxxs) rem($space-sm) !default;
+$button-padding-xs: rem($space-xxxs) rem($space-xs) !default;
+$button-padding-sm: rem($space-xxxs) rem($space-md) !default;
+$button-padding-md: rem($space-xxxs) rem($space-md) !default;
+$button-padding-lg: rem($space-xxs) rem($space-lg) !default;
+$button-padding-xl: rem($space-xxs) rem($space-xl) !default;
+$button-padding-xxl: rem($space-xxs) rem($space-xxl) !default;
+$button-padding-xxxl: rem($space-xxs) rem($space-xxxl) !default;
+
+$button-size-xxxs: rem($size-xxxs) !default;
+$button-size-xxs: rem($size-xxs) !default;
+$button-size-xs: rem($size-xs) !default;
+$button-size-sm: rem($size-sm) !default;
+$button-size-md: rem($size-md) !default;
+$button-size-lg: rem($size-lg) !default;
+$button-size-xl: rem($size-xl) !default;
+$button-size-xxl: rem($size-xxl) !default;
+$button-size-xxxl: rem($size-xxxl) !default;
+
+
+// ==========================================================================
+// Cards
+// ==========================================================================
+
+$card-margin: rem($space-xxs) !default;
+$card-border: 1px solid $color-light !default;
+$card-radius: 0 !default;
+$card-bg: $color-lightest !default;
+$card-color: $base-color !default;
+$card-raised-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,.04), 0 0.2rem 1rem 0 rgba(0,0,0,.10) !default;
+
+$card-content-padding: rem($space-xxs) !default; 
+$card-outlined-border: 2px solid transparent !default;
+
+
+// ==========================================================================
+// Standalone Typography Modifiers
+// ==========================================================================
+
+$type-bold: 700 !default;
+$type-black: 900 !default;
+$type-italic: italic !default;
+$type-small: 0.7em !default;
+$type-caps: small-caps !default;
